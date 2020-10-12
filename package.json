@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "0.4.0",
-  "homepage": "https://codyb.co",
+  "homepage": "https://veebor.github.io",
   "description": "Portfolio site for Cody Bennett",
   "repository": "https://github.com/CodyJasonBennett/portfolio-website.git",
   "author": "Cody Bennett <hi@codyb.co>",
@@ -29,6 +29,7 @@
   "dependencies": {
     "@mdx-js/react": "^1.6.18",
     "classnames": "^2.2.6",
+    "gh-pages": "^3.1.0",
     "ios-inner-height": "^1.1.1",
     "popmotion": "^8.7.6",
     "react": "^16.13.1",
@@ -43,7 +44,8 @@
     "build": "react-scripts build",
     "build-storybook": "build-storybook -o build-storybook",
     "postbuild": "react-snap",
-    "deploy": "firebase deploy --only hosting:portfolio",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "deploy-functions": "firebase deploy --only functions",
     "deploy-storybook": "firebase deploy --only hosting:storybook",
     "serve": "firebase serve --only hosting",
