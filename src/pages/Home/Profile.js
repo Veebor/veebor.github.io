@@ -27,19 +27,15 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      I’m Cody. Currently, I am based in Austin, working as the lead designer at{' '}
-      <Link href="https://linkedin.com/company/tech-builders" target="_blank">Tech Builders</Link>
-      . I am a designer, full-stack developer, and creator of web & mobile solutions with a focus on motion and user experience.
+      We are Veebor. Currently, we are based in Piedmont. 
+      We are a back-end & front-end ddevelope working together to create new solutions.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      In my spare time, I like to write music and{' '}
-      <Link href="https://codepen.codyb.co" target="_blank">
-        experiment with new tech
-      </Link>
-      . I’m always interested in new projects, so feel free to drop me a line.
+      In our spare time, we like to write code and experiment with new tech. 
+      We're always interested in new projects, so feel free to drop us a line.
     </Text>
   </Fragment>
 );
@@ -67,7 +63,7 @@ const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                Send us a message
               </Button>
             </div>
             <div className="profile__column">
@@ -84,21 +80,12 @@ const Profile = ({ id, visible, sectionRef }) => {
                     `profile__tag-text--${status}`
                   )}
                 >
-                  About Me
+                  About Us
                 </div>
               </div>
               <div
                 className="profile__image-wrapper"
               >
-                {!prerender &&
-                  <Suspense fallback={null}>
-                    <Selfie
-                      className={classNames('profile__image', `profile__image--${status}`)}
-                      delay={100}
-                      alt="A 3D rendition of myself."
-                    />
-                  </Suspense>
-                }
               </div>
             </div>
           </div>

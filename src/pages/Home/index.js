@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef, Fragment } from 'react';
+import React, { useState, useEffect, useRef, Fragment, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useTheme } from 'components/ThemeProvider';
 import Intro from './Intro';
 import ProjectSummary from './ProjectSummary';
 import Profile from './Profile';
@@ -10,22 +11,29 @@ import modernTexture from 'assets/modern.jpg';
 import modernTextureLarge from 'assets/modern-large.jpg';
 import modernTexturePlaceholder from 'assets/modern-placeholder.jpg';
 import supernoteTexture from 'assets/supernote.jpg';
-import supernoteTextureLarge from 'assets/supernote-large.jpg';
+import montiAppLoginLight from 'assets/montiapp-login.jpg';
+import montiAppLoginDark from 'assets/montiapp-login-dark.jpg';
 import supernoteTexturePlaceholder from 'assets/supernote-placeholder.jpg';
 import supernoteHomeTexture from 'assets/supernote-home.jpg';
-import supernoteHomeTextureLarge from 'assets/supernote-home-large.jpg';
+import lslAppLoginLight from 'assets/lsl-login.jpeg';
+import lslAppLoginDark from 'assets/lsl-login-dark.jpeg';
+import lslAppMainLight from 'assets/lsl.jpeg';
+import lslAppMainDark from 'assets/lsl-dark.jpeg';
+import montiAppMainLight from 'assets/montiapp-large.jpg';
+import montiAppMainDark from 'assets/montiapp-large-dark.jpeg';
 import supernoteHomeTexturePlaceholder from 'assets/supernote-home-placeholder.jpg';
-import dttTexture from 'assets/dtt.jpg';
-import dttTextureLarge from 'assets/dtt-large.jpg';
+import dttTexture from 'assets/smarthome-large.png';
+import dttTextureLarge from 'assets/smarthome-large.png';
 import dttTexturePlaceholder from 'assets/dtt-placeholder.jpg';
 import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
 
-const disciplines = ['Developer', 'Creator', 'Animator', 'Illustrator', 'Musician'];
+const disciplines = ['eDeveloper', 'Creator', 'Animator', 'Illustrator','Programmer' ];
 
 export default function Home(props) {
   const { status } = useRouteTransition();
   const { hash, state } = useLocation();
+  const theme = useTheme();
   const initHash = useRef(true);
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
@@ -125,11 +133,10 @@ export default function Home(props) {
   return (
     <Fragment>
       <Helmet>
-        <title>Cody Bennett | Designer + Developer</title>
+        <title> Veebor | Designer + Developer</title>
         <meta
           name="description"
-          content="Portfolio of Cody Jason Bennett – a designer, full-stack developer, and creator of web & mobile solutions with a focus on motion and user experience."
-        />
+          content="Portfolio of Veebor –  designers and  full-stack developers."/>
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />
       </Helmet>
@@ -144,61 +151,39 @@ export default function Home(props) {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Putting Players First"
-        description="Building a community that puts players and game health first, not profits."
-        buttonText="View Project"
-        buttonLink="/projects/modern"
-        model={{
-          type: 'laptop',
-          alt: 'The Modern Project Landing Page',
-          textures: [
-            {
-              src: modernTexture,
-              srcSet: `${modernTexture} 800w, ${modernTextureLarge} 1440w`,
-              placeholder: modernTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-2"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="Supernote"
-        description="Design and development of a note taking app built with React Native."
+        title="MontiApp"
+        description="Building the new horizon of school apps."
         buttonText="View Website"
-        buttonLink="https://supernote.codyb.co"
+        buttonLink="https://liceomonti.edu.it"
         model={{
           type: 'phone',
-          alt: 'Supernote\'s splash screen.',
+          alt: 'MontiApp\'s splash screen.',
           textures: [
             {
               src: supernoteHomeTexture,
-              srcSet: `${supernoteHomeTexture} 254w, ${supernoteHomeTextureLarge} 508w`,
+              srcSet: `${supernoteHomeTexture} 254w, ${theme.themeId == "dark" ? montiAppMainDark : montiAppMainLight} 508w`,
               placeholder: supernoteHomeTexturePlaceholder,
             },
             {
               src: supernoteTexture,
-              srcSet: `${supernoteTexture} 254w, ${supernoteTextureLarge} 508w`,
+              srcSet: `${supernoteTexture} 254w, ${theme.themeId == "dark" ? montiAppLoginDark : montiAppLoginLight} 508w`,
               placeholder: supernoteTexturePlaceholder,
             },
           ],
         }}
       />
       <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="A Tool for Everything"
-        description="Creating a platfrom to help developers build better software."
+        id="project-2"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
+        title="SmartHome"
+        description="An open source IoT project"
         buttonText="View Project"
         buttonLink="/projects/dtt"
         model={{
           type: 'laptop',
-          alt: 'DevTech Tools Landing Page',
+          alt: 'SmartHome Landing Page',
           textures: [
             {
               src: dttTexture,
@@ -208,12 +193,40 @@ export default function Home(props) {
           ],
         }}
       />
-      <Profile
+      <ProjectSummary
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={3}
+        title="LightSpeedLearn"
+        description="An app create to help students"
+        buttonText="View Website"
+        buttonLink="lightspeedlearn.net"
+        model={{
+          type: 'phone',
+          alt: 'LSL\'s splash screen.',
+          textures: [
+            {
+              src: supernoteHomeTexture,
+              srcSet: `${supernoteHomeTexture} 254w, ${theme.themeId == "dark" ? lslAppMainDark : lslAppMainLight} 508w`,
+              placeholder: supernoteHomeTexturePlaceholder,
+            },
+            {
+              src: supernoteTexture,
+              srcSet: `${supernoteTexture} 254w, ${theme.themeId == "dark" ? lslAppLoginDark : lslAppLoginLight} 508w`,
+              placeholder: supernoteTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
+ <Profile
         sectionRef={about}
         visible={visibleSections.includes(about.current)}
         id="about"
       />
-      <Footer />
+
+    <Footer />
     </Fragment>
   );
 }
