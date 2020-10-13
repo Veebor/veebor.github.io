@@ -1,1 +1,0 @@
-{"version":3,"sources":["Selfie.css"],"names":[],"mappings":"AAAA,QACE,iBACF,CAEA,gBACE,iBAAkB,CAClB,KAAM,CACN,OAAQ,CACR,QAAS,CACT,MACF","file":"15.6ae676aa.chunk.css","sourcesContent":[".selfie {\n  position: relative;\n}\n\n.selfie__canvas {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n"]}
