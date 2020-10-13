@@ -27,14 +27,14 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      We are Veebor. Currently, we are based in Piedmont. 
-      We are a back-end & front-end ddevelope working together to create new solutions.
+      We are Veebor. Currently, we are based in Piedmont.
+      We are a back-end & front-end developer working together to create new solutions.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      In our spare time, we like to write code and experiment with new tech. 
+      In our spare time, we like to write code and experiment with new tech.
       We're always interested in new projects, so feel free to drop us a line.
     </Text>
   </Fragment>

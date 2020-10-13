@@ -75,7 +75,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                 <DecoderText text="Veebor" start={!prerender} delay={300} />
               </h1>
               <Heading level={0} as="h2" className="intro__title">
-                <span className="intro__title-label">{`Designer + ${introLabel}`}</span>
+                <span className="intro__title-label">{`Innovation + ${introLabel}`}</span>
                 <span
                   aria-hidden
                   className={classNames('intro__title-row', {
@@ -89,7 +89,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                     )}
                     style={{ '--delay': tokens.base.durationXS }}
                   >
-                    Designer
+                    Innovation
                   </span>
                   <span
                     className={classNames(

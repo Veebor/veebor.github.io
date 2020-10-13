@@ -5,14 +5,14 @@ _______________________________________________________________________________
 
 DESIGNER
 
-Cody Bennett
+Veebor
 Designer, Full-Stack Developer
 
 Design tools:
 Figma
 InVision
 
-github.com/CodyJasonBennett
+github.com/Veebor
 
 _______________________________________________________________________________
 

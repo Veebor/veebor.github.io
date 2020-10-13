@@ -97,10 +97,10 @@ const Contact = () => {
   return (
     <Section className={classNames('contact', `contact--${status}`)}>
       <Helmet>
-        <title>Contact | Cody Bennett</title>
+        <title>Contact | Veebor</title>
         <meta
           name="description"
-          content="Send me a message if you’re interested in discussing a project"
+          content="Send us a message if you’re interested in discussing a project"
         />
       </Helmet>
       <TransitionGroup component={null}>

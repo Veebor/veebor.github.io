@@ -7,9 +7,9 @@ import ProjectSummary from './ProjectSummary';
 import Profile from './Profile';
 import Footer from 'components/Footer';
 import { usePrefersReducedMotion, useRouteTransition } from 'hooks';
-import modernTexture from 'assets/modern.jpg';
-import modernTextureLarge from 'assets/modern-large.jpg';
-import modernTexturePlaceholder from 'assets/modern-placeholder.jpg';
+// import modernTexture from 'assets/modern.jpg';
+// import modernTextureLarge from 'assets/modern-large.jpg';
+// import modernTexturePlaceholder from 'assets/modern-placeholder.jpg';
 import supernoteTexture from 'assets/supernote.jpg';
 import montiAppLoginLight from 'assets/montiapp-login.jpg';
 import montiAppLoginDark from 'assets/montiapp-login-dark.jpg';
@@ -28,12 +28,14 @@ import dttTexturePlaceholder from 'assets/dtt-placeholder.jpg';
 import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
 
-const disciplines = ['eDeveloper', 'Creator', 'Animator', 'Illustrator','Programmer' ];
+const disciplines = ['Development', 'Sysadmin', 'Design', 'Research'];
 
 export default function Home(props) {
   const { status } = useRouteTransition();
   const { hash, state } = useLocation();
   const theme = useTheme();
+  const { themeId } = theme;
+  const isDark = themeId === 'dark';
   const initHash = useRef(true);
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
@@ -133,10 +135,10 @@ export default function Home(props) {
   return (
     <Fragment>
       <Helmet>
-        <title> Veebor | Designer + Developer</title>
+        <title> Veebor | UI Designer + Back-end developer</title>
         <meta
           name="description"
-          content="Portfolio of Veebor –  designers and  full-stack developers."/>
+          content="Veebor –  designers and full-stack developers." />
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />
       </Helmet>
@@ -161,12 +163,12 @@ export default function Home(props) {
           textures: [
             {
               src: supernoteHomeTexture,
-              srcSet: `${supernoteHomeTexture} 254w, ${theme.themeId == "dark" ? montiAppMainDark : montiAppMainLight} 508w`,
+              srcSet: `${supernoteHomeTexture} 254w, ${isDark ? montiAppMainDark : montiAppMainLight} 508w`,
               placeholder: supernoteHomeTexturePlaceholder,
             },
             {
               src: supernoteTexture,
-              srcSet: `${supernoteTexture} 254w, ${theme.themeId == "dark" ? montiAppLoginDark : montiAppLoginLight} 508w`,
+              srcSet: `${supernoteTexture} 254w, ${isDark ? montiAppLoginDark : montiAppLoginLight} 508w`,
               placeholder: supernoteTexturePlaceholder,
             },
           ],
@@ -180,7 +182,7 @@ export default function Home(props) {
         title="SmartHome"
         description="An open source IoT project"
         buttonText="View Project"
-        buttonLink="/projects/dtt"
+        buttonLink="https://github.com/Veebor/SmartHome"
         model={{
           type: 'laptop',
           alt: 'SmartHome Landing Page',
@@ -199,7 +201,7 @@ export default function Home(props) {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="LightSpeedLearn"
-        description="An app create to help students"
+        description="An app created to help students"
         buttonText="View Website"
         buttonLink="lightspeedlearn.net"
         model={{
@@ -208,25 +210,25 @@ export default function Home(props) {
           textures: [
             {
               src: supernoteHomeTexture,
-              srcSet: `${supernoteHomeTexture} 254w, ${theme.themeId == "dark" ? lslAppMainDark : lslAppMainLight} 508w`,
+              srcSet: `${supernoteHomeTexture} 254w, ${isDark ? lslAppMainDark : lslAppMainLight} 508w`,
               placeholder: supernoteHomeTexturePlaceholder,
             },
             {
               src: supernoteTexture,
-              srcSet: `${supernoteTexture} 254w, ${theme.themeId == "dark" ? lslAppLoginDark : lslAppLoginLight} 508w`,
+              srcSet: `${supernoteTexture} 254w, ${isDark ? lslAppLoginDark : lslAppLoginLight} 508w`,
               placeholder: supernoteTexturePlaceholder,
             },
           ],
         }}
       />
 
- <Profile
+      <Profile
         sectionRef={about}
         visible={visibleSections.includes(about.current)}
         id="about"
       />
 
-    <Footer />
+      <Footer />
     </Fragment>
   );
 }

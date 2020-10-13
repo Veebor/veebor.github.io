@@ -5,7 +5,7 @@ addons.setConfig({
   theme: {
     ...themes.dark,
     brandImage: 'https://codyb.co/icon.svg',
-    brandTitle: 'Cody Bennett Components',
+    brandTitle: 'Veebor Components',
     brandUrl: 'https://codyb.co',
   },
 });
