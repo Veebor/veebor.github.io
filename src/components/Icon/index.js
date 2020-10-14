@@ -8,7 +8,6 @@ import { ReactComponent as Email } from 'assets/icons/email.svg';
 import { ReactComponent as Error } from 'assets/icons/error.svg';
 import { ReactComponent as Figma } from 'assets/icons/figma.svg';
 import { ReactComponent as Github } from 'assets/icons/github.svg';
-import { ReactComponent as Linkedin } from 'assets/icons/linkedin.svg';
 import { ReactComponent as Menu } from 'assets/icons/menu.svg';
 import { ReactComponent as Pause } from 'assets/icons/pause.svg';
 import { ReactComponent as Play } from 'assets/icons/play.svg';
@@ -25,7 +24,6 @@ export const icons = {
   error: Error,
   figma: Figma,
   github: Github,
-  linkedin: Linkedin,
   menu: Menu,
   pause: Pause,
   play: Play,

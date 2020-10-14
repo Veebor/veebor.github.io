@@ -21,18 +21,13 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'LinkedIn',
-    url: 'https://linkedin.codyb.co',
-    icon: 'linkedin',
-  },
-  {
     label: 'Github',
-    url: 'https://github.codyb.co',
+    url: 'https://github.com/Veebor',
     icon: 'github',
   },
   {
     label: 'Email',
-    url: 'mailto:hi@codyb.co',
+    url: 'mailto:veebor@veebor.dev',
     icon: 'email',
   },
 ];

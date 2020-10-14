@@ -7,24 +7,24 @@ import ProjectSummary from './ProjectSummary';
 import Profile from './Profile';
 import Footer from 'components/Footer';
 import { usePrefersReducedMotion, useRouteTransition } from 'hooks';
-// import modernTexture from 'assets/modern.jpg';
-// import modernTextureLarge from 'assets/modern-large.jpg';
-// import modernTexturePlaceholder from 'assets/modern-placeholder.jpg';
-import supernoteTexture from 'assets/supernote.jpg';
+import modernTexture from 'assets/montiapp-login.jpg';
+import modernTextureLarge from 'assets/modern-large.jpg';
+import modernTexturePlaceholder from 'assets/modern-placeholder.jpg';
+import supernoteTexture from 'assets/montiapp-login.jpg';
 import montiAppLoginLight from 'assets/montiapp-login.jpg';
 import montiAppLoginDark from 'assets/montiapp-login-dark.jpg';
-import supernoteTexturePlaceholder from 'assets/supernote-placeholder.jpg';
-import supernoteHomeTexture from 'assets/supernote-home.jpg';
+import supernoteTexturePlaceholder from 'assets/montiapp-large.jpg';
+import supernoteHomeTexture from 'assets/montiapp-large.jpg';
 import lslAppLoginLight from 'assets/lsl-login.jpeg';
 import lslAppLoginDark from 'assets/lsl-login-dark.jpeg';
 import lslAppMainLight from 'assets/lsl.jpeg';
 import lslAppMainDark from 'assets/lsl-dark.jpeg';
 import montiAppMainLight from 'assets/montiapp-large.jpg';
 import montiAppMainDark from 'assets/montiapp-large-dark.jpeg';
-import supernoteHomeTexturePlaceholder from 'assets/supernote-home-placeholder.jpg';
+import supernoteHomeTexturePlaceholder from 'assets/montiapp-large.jpg';
 import dttTexture from 'assets/smarthome-large.png';
 import dttTextureLarge from 'assets/smarthome-large.png';
-import dttTexturePlaceholder from 'assets/dtt-placeholder.jpg';
+import dttTexturePlaceholder from 'assets/smarthome-large.png';
 import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
 
@@ -209,14 +209,14 @@ export default function Home(props) {
           alt: 'LSL\'s splash screen.',
           textures: [
             {
-              src: supernoteHomeTexture,
-              srcSet: `${supernoteHomeTexture} 254w, ${isDark ? lslAppMainDark : lslAppMainLight} 508w`,
-              placeholder: supernoteHomeTexturePlaceholder,
+              src: lslAppMainLight,
+              srcSet: `${lslAppMainLight} 254w, ${theme.themeId == "dark" ? lslAppMainDark : lslAppMainLight} 508w`,
+              placeholder: lslAppMainLight,
             },
             {
-              src: supernoteTexture,
-              srcSet: `${supernoteTexture} 254w, ${isDark ? lslAppLoginDark : lslAppLoginLight} 508w`,
-              placeholder: supernoteTexturePlaceholder,
+              src: lslAppLoginLight,
+              srcSet: `${lslAppLoginLight} 254w, ${theme.themeId == "dark" ? lslAppLoginDark : lslAppLoginLight} 508w`,
+              placeholder: lslAppLoginLight,
             },
           ],
         }}
