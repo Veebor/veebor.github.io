@@ -135,10 +135,10 @@ export default function Home(props) {
   return (
     <Fragment>
       <Helmet>
-        <title> Veebor | UI Designer + Back-end developer</title>
+        <title> Veebor | Designers and full-stack developers.</title>
         <meta
           name="description"
-          content="Veebor –  designers and full-stack developers." />
+          content="Veebor – designers and full-stack developers." />
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />
       </Helmet>

@@ -92,8 +92,8 @@ const AppRoutes = () => {
                     <Route path="/contact" component={Contact} />
                     {/* <Route path="/projects/modern" component={ProjectModern} />
                     <Route path="/projects/dtt" component={ProjectDTT} />
-                    <Route path="/projects/mystgang" component={ProjectMystGang} /> */}
-                    <Route path="/articles" component={Articles} />
+                    <Route path="/projects/mystgang" component={ProjectMystGang} /> 
+                     <Route path="/articles" component={Articles} />*/}
                     <Route component={Page404} />
                   </Switch>
                 </Suspense>
