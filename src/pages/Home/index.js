@@ -21,6 +21,7 @@ import lslAppMainLight from 'assets/lsl.jpeg';
 import lslAppMainDark from 'assets/lsl-dark.jpeg';
 import montiAppMainLight from 'assets/montiapp-large.jpg';
 import montiAppMainDark from 'assets/montiapp-large-dark.jpeg';
+import repeto from 'assets/repeto.png';
 import supernoteHomeTexturePlaceholder from 'assets/montiapp-large.jpg';
 import dttTexture from 'assets/smarthome-large.png';
 import dttTextureLarge from 'assets/smarthome-large.png';
@@ -43,11 +44,12 @@ export default function Home(props) {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const about = useRef();
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    const revealSections = [intro, projectOne, projectTwo, projectThree, about];
+    const revealSections = [intro, projectOne, projectTwo, projectThree, projectFour, about];
 
     const sectionObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -84,7 +86,7 @@ export default function Home(props) {
 
     const handleHashchange = (hash, scroll) => {
       clearTimeout(scrollTimeout);
-      const hashSections = [intro, projectOne, projectTwo, projectThree, about];
+      const hashSections = [intro, projectOne, projectTwo, projectThree, projectFour, about];
       const hashString = hash.replace('#', '');
       const element = hashSections.filter(item => item.current.id === hashString)[0];
       if (!element) return;
@@ -153,6 +155,27 @@ export default function Home(props) {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
+        title="Repeto"
+        description="An online course platform"
+        buttonText="View Website"
+        buttonLink="https://repeto.it"
+        model={{
+          type: 'laptop',
+          alt: 'Repeto\'s splash screen.',
+          textures: [
+            {
+              src: repeto,
+              srcSet: `${repeto} 800w, ${repeto} 1440w`,
+              placeholder: dttTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
         title="MontiApp"
         description="Building the new horizon of school apps."
         buttonText="View Website"
@@ -175,10 +198,10 @@ export default function Home(props) {
         }}
       />
       <ProjectSummary
-        id="project-2"
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={3}
         title="SmartHome"
         description="An open source IoT project"
         buttonText="View Project"
@@ -196,14 +219,14 @@ export default function Home(props) {
         }}
       />
       <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
+        id="project-4"
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
         title="LightSpeedLearn"
         description="An app created to help students"
-        buttonText="View Website"
-        buttonLink="lightspeedlearn.net"
+        buttonText="View github"
+        buttonLink="https://github.com/Veebor"
         model={{
           type: 'phone',
           alt: 'LSL\'s splash screen.',
