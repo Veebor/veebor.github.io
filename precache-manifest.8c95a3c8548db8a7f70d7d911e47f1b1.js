@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f479a356224e733e137bb27fc02ee0a",
+    "revision": "dbb2f2767e5ed15a50e133dc63006d0a",
     "url": "/index.html"
   },
   {
-    "revision": "8943a5b4cde337bd2070",
-    "url": "/static/css/10.1866502e.chunk.css"
+    "revision": "a24c9e682955d6096ef6",
+    "url": "/static/css/10.97119998.chunk.css"
   },
   {
-    "revision": "199d8d5a831f244ec422",
-    "url": "/static/css/11.6ae676aa.chunk.css"
+    "revision": "359514569191c877b4e0",
+    "url": "/static/css/11.144a260b.chunk.css"
   },
   {
-    "revision": "ae3c73c17a6c24915854",
-    "url": "/static/css/3.a9b8f123.chunk.css"
+    "revision": "6ba94682ca1b5d748aba",
+    "url": "/static/css/3.74968c61.chunk.css"
   },
   {
-    "revision": "679acc90994819d1b88e",
-    "url": "/static/css/4.f12425e6.chunk.css"
+    "revision": "4ab08737973659402e69",
+    "url": "/static/css/4.2a4c1954.chunk.css"
   },
   {
-    "revision": "7af9803e00df18627412",
-    "url": "/static/css/6.901ebdf5.chunk.css"
+    "revision": "e167c0fd33439608c05c",
+    "url": "/static/css/6.d43d5e69.chunk.css"
   },
   {
-    "revision": "71e6e4e4f81d6813d3c6",
-    "url": "/static/css/7.7812ffbf.chunk.css"
+    "revision": "ea7bb1460eb41b401a3c",
+    "url": "/static/css/7.6de7692f.chunk.css"
   },
   {
-    "revision": "6c8f1c2ea58dbe69040e",
-    "url": "/static/css/8.4c1d348a.chunk.css"
+    "revision": "15c2c2cd64650a6326fa",
+    "url": "/static/css/8.34756318.chunk.css"
   },
   {
-    "revision": "7a64f6e663204b39a08e",
-    "url": "/static/css/main.6334d61d.chunk.css"
+    "revision": "bd1a377993245f53a5a2",
+    "url": "/static/css/main.d8ed1a63.chunk.css"
   },
   {
     "revision": "a7b8658eb4cc0ba0aad7",
@@ -44,11 +44,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/0.0943513f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8943a5b4cde337bd2070",
+    "revision": "a24c9e682955d6096ef6",
     "url": "/static/js/10.172af67b.chunk.js"
   },
   {
-    "revision": "199d8d5a831f244ec422",
+    "revision": "359514569191c877b4e0",
     "url": "/static/js/11.4178b280.chunk.js"
   },
   {
@@ -60,12 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/13.6487302f.chunk.js"
   },
   {
-    "revision": "ae3c73c17a6c24915854",
-    "url": "/static/js/3.82536d57.chunk.js"
+    "revision": "6ba94682ca1b5d748aba",
+    "url": "/static/js/3.18dcbb25.chunk.js"
   },
   {
-    "revision": "679acc90994819d1b88e",
-    "url": "/static/js/4.7fc01554.chunk.js"
+    "revision": "4ab08737973659402e69",
+    "url": "/static/js/4.c2394bae.chunk.js"
   },
   {
     "revision": "bdafb04c98f14a5757d2",
@@ -76,15 +76,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/5.9d5f7111.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7af9803e00df18627412",
-    "url": "/static/js/6.9d861156.chunk.js"
+    "revision": "e167c0fd33439608c05c",
+    "url": "/static/js/6.acafb072.chunk.js"
   },
   {
-    "revision": "71e6e4e4f81d6813d3c6",
+    "revision": "ea7bb1460eb41b401a3c",
     "url": "/static/js/7.7e8e2768.chunk.js"
   },
   {
-    "revision": "6c8f1c2ea58dbe69040e",
+    "revision": "15c2c2cd64650a6326fa",
     "url": "/static/js/8.62f5d94f.chunk.js"
   },
   {
@@ -92,52 +92,52 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/9.9791872c.chunk.js"
   },
   {
-    "revision": "7a64f6e663204b39a08e",
-    "url": "/static/js/main.36b7e72d.chunk.js"
+    "revision": "bd1a377993245f53a5a2",
+    "url": "/static/js/main.6386264e.chunk.js"
   },
   {
-    "revision": "491cec2abf64b016be86",
-    "url": "/static/js/runtime-main.cbf5aec5.js"
+    "revision": "4fb841d99331c159a689",
+    "url": "/static/js/runtime-main.d8bd895e.js"
   },
   {
     "revision": "0621a7abbc753c23757395050f1a072b",
     "url": "/static/media/accessible-three-scene.0621a7ab.mp4"
   },
   {
-    "revision": "7c8d5c080e63f6f6e665eb17926185dd",
-    "url": "/static/media/arrow-down.7c8d5c08.svg"
+    "revision": "2fb266c859aec19d83b875d3bf102169",
+    "url": "/static/media/arrow-down.2fb266c8.svg"
   },
   {
-    "revision": "e069a7b2c27521dc63e58a8d91facda1",
-    "url": "/static/media/arrow-right.e069a7b2.svg"
+    "revision": "c60a01e0652cb37b8aa03626e4edd5bc",
+    "url": "/static/media/arrow-right.c60a01e0.svg"
   },
   {
-    "revision": "38938965922ff4bc67a5db5103ba83d6",
-    "url": "/static/media/chevron-right.38938965.svg"
+    "revision": "58a694f92999cd265d1004c620d9d084",
+    "url": "/static/media/chevron-right.58a694f9.svg"
   },
   {
-    "revision": "b58032a934007028100fb48d8466ccae",
-    "url": "/static/media/close.b58032a9.svg"
+    "revision": "c1249c0994c03d33c455d5fa234719e9",
+    "url": "/static/media/close.c1249c09.svg"
   },
   {
-    "revision": "c1b25c4a9f857de38c8ae06c2fe34c53",
-    "url": "/static/media/dribbble.c1b25c4a.svg"
+    "revision": "bbeeab0e7e005c3fa1dc657431c32f19",
+    "url": "/static/media/dribbble.bbeeab0e.svg"
   },
   {
-    "revision": "6a087ef4ef0fc97e834c0897ce3d2419",
-    "url": "/static/media/email.6a087ef4.svg"
+    "revision": "3f594fcefdf6263cf4292ec6a476dfa6",
+    "url": "/static/media/email.3f594fce.svg"
   },
   {
-    "revision": "5e2aa24d176f00916fcf082cc7d2a024",
-    "url": "/static/media/error.5e2aa24d.svg"
+    "revision": "f0b67b15a7ea87b73aa70c37961be10e",
+    "url": "/static/media/error.f0b67b15.svg"
   },
   {
-    "revision": "c7f063e46425af2bd570874db62b0280",
-    "url": "/static/media/figma.c7f063e4.svg"
+    "revision": "a294ce98932d15bc371bfade7aa9a0a2",
+    "url": "/static/media/figma.a294ce98.svg"
   },
   {
-    "revision": "9d67ce004f11c63a6d47c9bb8ba6f7a6",
-    "url": "/static/media/github.9d67ce00.svg"
+    "revision": "5df2d6b1da7051ecd553850d231bef01",
+    "url": "/static/media/github.5df2d6b1.svg"
   },
   {
     "revision": "f83805fc5163c425a50f2bcf10252fa2",
@@ -152,8 +152,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gotham-medium.12acaf39.woff2"
   },
   {
-    "revision": "1885f62fad24ae5ebe4ea7fd2ad6938b",
-    "url": "/static/media/icon.1885f62f.svg"
+    "revision": "852715bf5e0c28e4f5c3e904c9f34e34",
+    "url": "/static/media/icon.852715bf.svg"
   },
   {
     "revision": "d09a62f12d844899c4c23800aa067505",
@@ -180,8 +180,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/macbook-pro.765cf7ff.glb"
   },
   {
-    "revision": "d74088ef3f0587871ecccedbdc2148ad",
-    "url": "/static/media/menu.d74088ef.svg"
+    "revision": "0adc727a864de1c51fa51a010b1e174b",
+    "url": "/static/media/menu.0adc727a.svg"
   },
   {
     "revision": "c3850143835a6f6b14b89b901fbbf3b8",
@@ -212,12 +212,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/observer-api-for-modern-javascript.876082ef.jpg"
   },
   {
-    "revision": "051afd6f747ad7256098605cfb490818",
-    "url": "/static/media/pause.051afd6f.svg"
+    "revision": "6a841a73cb79747a731328bf52f4a625",
+    "url": "/static/media/pause.6a841a73.svg"
   },
   {
-    "revision": "01370b90ef2089e39de4033fe59a988a",
-    "url": "/static/media/play.01370b90.svg"
+    "revision": "5a275af0f3019997b7a385f4f8d29d57",
+    "url": "/static/media/play.5a275af0.svg"
   },
   {
     "revision": "c6d24e0bf9f8e9bbd122749483c3fa94",
@@ -228,16 +228,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/selfie.8ec45f3c.glb"
   },
   {
-    "revision": "5af0649394038b1103be1b35c61f8c08",
-    "url": "/static/media/send.5af06493.svg"
+    "revision": "f54402bc06ff99dad1885a871202800f",
+    "url": "/static/media/send.f54402bc.svg"
   },
   {
     "revision": "5e4eff97e8c358ee788b8c391a7bced2",
     "url": "/static/media/smarthome-large.5e4eff97.png"
   },
   {
-    "revision": "4ea9273e168b5e4e69b16adc98cb08f3",
-    "url": "/static/media/twitter.4ea9273e.svg"
+    "revision": "4413459505940dee4c036caa5dbf3191",
+    "url": "/static/media/twitter.44134595.svg"
   },
   {
     "revision": "8dee4d41d1cd59d07533411719a2fe9e",
