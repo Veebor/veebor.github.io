@@ -62,23 +62,25 @@ const Contact = () => {
       try {
         setSending(true);
 
-        const response = await fetch('/functions/sendMessage', {
+        const body = '{"content": "New message from ' + email.value + ': ' + message.value + '"}';
+
+        const response = await fetch('https://discord.com/api/webhooks/1102703925469130783/uWHFiLb2S8nj4hrnZQ89fQsio2eLWylHTDZefIAFcmH03YABZR1_vEbRMGrqk1XX1Xne', {
           method: 'POST',
-          mode: 'cors',
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
           },
-          body: JSON.stringify({
-            email: email.value,
-            message: message.value,
-          }),
+          body: body,
         });
 
-        const responseMessage = await response.json();
+        if (response.ok) {
+          setComplete(true);
+          setSending(false);
+          return;
+        }
 
         const statusError = getStatusError({
           status: response?.status,
-          errorMessage: responseMessage?.error,
+          errorMessage: 'Unknown error',
           fallback: 'There was a problem sending your message',
         });
 
