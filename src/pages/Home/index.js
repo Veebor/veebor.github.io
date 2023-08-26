@@ -156,9 +156,9 @@ export default function Home(props) {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Repeto"
-        description="An online course platform"
-        buttonText="View Website"
-        buttonLink="https://repeto.it"
+        description="An online course platform - developed by Veebor for an innovative startup."
+        buttonText="View Article"
+        buttonLink="https://officinamagazine.it/repeto-la-start-up-che-innova-la-scuola/"
         model={{
           type: 'laptop',
           alt: 'Repeto\'s splash screen.',
@@ -179,7 +179,7 @@ export default function Home(props) {
         title="MontiApp"
         description="Building the new horizon of school apps."
         buttonText="View Website"
-        buttonLink="https://liceomonti.edu.it"
+        buttonLink="https://liceomonti.edu.it/notizie/299-dagli-studenti-per-gli-studenti-e-montiapp"
         model={{
           type: 'phone',
           alt: 'MontiApp\'s splash screen.',
